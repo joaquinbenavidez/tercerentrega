@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg barra-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white nav-text" href="/index.html">BZ CONCESIONARIO</a>
+            <button class="navbar-toggler text-white nav-text" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white nav-text nav-text" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white nav-text--seleccionado" href="../paginas/inicio.html">Vehiculos</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white nav-text" href="./2.html">Camionetas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-xl">
+        <select class="form-select form-select-lg mb-3 mt-3" aria-label=".form-select-lg example">
+            <option selected>Seleccionar Marcas</option>
+            <option value="1">Audi</option>
+            <option value="2">Bmw</option>
+            <option value="3">Ford</option>
+            <option value="4">Chevrolet</option>
+            <option value="5">Mercedes</option>
+            <option value="6">Fiat</option>
+            <option value="7">Volkswagen</option>
+            <option value="8">Chery</option>
+        </select>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="container-xxl">
+                <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../imagenes/bmw.jpg.jpg" class="d-block w-100" alt="BMW">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagenes/rs3.jpg.jpg" class="d-block w-100" alt="BMW">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagenes/audi.jpg.jpg" class="d-block w-100" alt="BMW">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-between fs-2">
+            <span>Recomendados</span>
+            <span>Ver todos</span>
+        </div>
+        <div class="grid-autos" style="--bs-columns: 3;">
+            <a href="descripcionextra.html" class="scss-auto g-col-4">
+                <img src="../imagenes/audi.jpg.jpg" alt="fondo5">
+                <span class="nombre-auto">Audi q8 3.0 tfsi</span>
+                <span class="precio-auto">US$ 186.000</span>
+            </a>
+            <a href="descripcion.html" class="scss-auto g-col-4">
+                <img src="../imagenes/raptor.jpg.jpg" alt="fondo6">
+                <span class="nombre-auto">Ford f150 Raptor</span>
+                <span class="precio-auto">US$ 110.000</span>
+            </a>
+            <a href="abarth.html" class="scss-auto g-col-4">
+                <img src="../imagenes/abarth.jpg.jpg" alt="fondo7">
+                <span class="nombre-auto">Fiat 500 Abarth</span>
+                <span class="precio-auto">US$ 25.500</span>
+            </a>
+            <a href="rs3.html" class="scss-auto g-col-4">
+                <img src="../imagenes/rs3.jpg.jpg" alt="fondo5">
+                <span class="nombre-auto">Audi rs3 2.5 turbo</span>
+                <span class="precio-auto">US$ 85.000</span>
+            </a>
+            <a href="cruzers.html" class="scss-auto g-col-4">
+                <img src="../imagenes/cruze.jpg" alt="fondo6">
+                <span class="nombre-auto">Cruze rs sport 1.4 turbo</span>
+                <span class="precio-auto">US$ 15.000</span>
+            </a>
+            <a href="chevy.html" class="scss-auto g-col-4">
+                <img src="../imagenes/chevy.jpg" alt="fondo7">
+                <span class="nombre-auto">Chevrolet serie 2</span>
+                <span class="precio-auto">US$ 31.000</span>
+            </a>
+        </div>
+        <div class="mt-2 pb-2 d-flex justify-content-center me-2">
+            <a href="inicio.html" type="button" class="btn btn-primary flex-grow-2 ms-3 boton-pie">1</a>
+            <a href="./2.html" type="button" class="btn btn-primary flex-grow-2 ms-3 boton-pie">2</a>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+@use "sass:map";
+@import "tema.scss";
+@import "controles.scss";
+@import "mixins.scss";
+
+$tamano-fuentes: ("Minuscula": 1em, "Pequena" : 1.5em, "Mediana" : 2.5em, "Grande" : 3.5em);
+
+.grid-autos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+//Cuando tenemos la pantalla mas chica
+@media (max-width: 600px) {
+    .grid-autos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@keyframes autoZoom {
+    from {
+        transform: scale(.98);
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    to {
+        transform: scale(1);
+        box-shadow: $sombra-color 1px 2px 4px 2px, rgba(27, 156, 255, 0.1) 0px 2px 6px 2px;
+    }
+}
+
+.titulo {
+    font-size: 2em;
+    color: white;
+    @include quitarLink;
+    font-weight: 600;
+  }
+  
+.scss-auto {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include quitarLink;
+    width: 100%;
+    padding: 8px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        border-radius: 5px;
+    }
+
+    .nombre-auto {
+        margin-top: 8px;
+        font-size: map-get($tamano-fuentes, "Pequena");
+        color: black;
+    }
+
+    .precio-auto {
+        font-size: map-get($tamano-fuentes, "Minuscula");
+        color: gray;
+    }
+
+    &:hover{
+        animation-name: autoZoom;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+}

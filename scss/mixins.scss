@@ -1,0 +1,12 @@
+@import "tema.scss";
+
+@mixin quitarLink {
+    color: white;
+    &:link {
+        color: inherit;
+        text-decoration: none;
+    }
+    &:hover {
+        color: $boton-color;
+    }
+}
